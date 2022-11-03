@@ -17,26 +17,11 @@ puts decode_char('.-')
 
 def decode_word(morse_word)
     str = ''
-    morse_word.split('')
-    .map do |word|
-      str += decode_char(word).to_s
+    morse_word.split.each do |word|
+    str += decode_char(word).to_s
     end
     str
 end
 
 puts decode_word("-- -.--")
 
-# Create a method to decode the entire message in Morse code, takes a string parameter, and return the string representation. Every word will be separated by 3 spaces (e.g. decode("-- -.--   -. .- -- .")
-# def decode_message(morse_message)
-#         morse_message
-#           .split('')
-#           .select do |char|
-#             char != ''
-#           end
-#           .map do |i|
-#             word.split(' ').map { |char| DICTIONARY[char] }.join
-#           end
-#           .join(' ')
-# end
-
-# puts decode_message("-- -.--   -. .- -- .")

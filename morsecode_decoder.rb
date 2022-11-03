@@ -7,6 +7,7 @@ DICTIONARY = {
 }.freeze
 
 # Create a method to decode a Morse code character, takes a string parameter, and return the corresponding character in uppercase (e.g. decode_char(".-") returns "A").
+
 def decode_char(morse_char)
     DICTIONARY[morse_char]
 end
@@ -38,7 +39,5 @@ def decode_message(morse_message)
           end
           .join(' ')
 end
-
-puts decode_message("-- -.--   -. .- -- .")
 
 puts decode_message("      .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")

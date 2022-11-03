@@ -40,3 +40,5 @@ def decode_message(morse_message)
 end
 
 puts decode_message("-- -.--   -. .- -- .")
+
+puts decode_message("      .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
